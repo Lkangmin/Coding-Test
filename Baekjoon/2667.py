@@ -1,3 +1,4 @@
+# 해당 영역 개수 확인 용도
 cnt = 0
 
 def dfs(x, y, n, matrix, visited):
@@ -27,9 +28,8 @@ for i in range(n):
             cnt = 1
             dfs(i, j, n, matrix, visited)
             total.append(cnt)
-            
+
 total.sort()
 print(len(total))
 for i in range(len(total)):
     print(total[i])
-
