@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
 import re
 
 def solution(new_id):
@@ -35,4 +29,3 @@ def solution(new_id):
             answer += answer[-1]
     
     return answer
-
