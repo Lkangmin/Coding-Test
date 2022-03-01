@@ -17,6 +17,7 @@ while T:
     
     dist = [[INF for i in range(T)] for j in range(T)]
     
+    # heap을 이용한 dijkstra 구현
     def dijk(s_x, s_y):
         q = []
         heapq.heappush(q, (matrix[s_x][s_y], s_x, s_y))
