@@ -7,7 +7,9 @@ for test_case in range(1, T + 1):
 
     for i in sound:
         cnt[i] += 1
+        # croak 순서를 지키지 않으면 잘못된 소리이다.
         if cnt['c'] >= cnt['r'] >= cnt['o'] >= cnt['a'] >= cnt['k']:
+            # 현재 겹쳐지는 개구리 울음소리 갱신
             max_frog = max(max(cnt.values()), max_frog)
             if i=='k':
                 for k in cnt.keys():
