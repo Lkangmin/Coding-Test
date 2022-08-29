@@ -1,6 +1,7 @@
 from itertools import permutations
 
 def prime(a):
+    # 0.5를 1/2로 하면 시간이 늘어난다... 
     for i in range(2, int(a**0.5)+1):
         if a%i:
             continue
